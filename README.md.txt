@@ -1,0 +1,32 @@
+# Flash Loan USDT Contract (100,000 USDT)
+
+This *Flash Loan* contract allows you to borrow *100,000 USDT* from *Aave V3* on *Ethereum Mainnet*.
+
+## 🔹 Features
+✔ Borrows *100,000 USDT* via *Aave V3 Flash Loan*  
+✔ Approves & repays the loan *automatically*  
+✔ Allows *deposit & withdrawal* of USDT  
+✔ Can be *modified for profit-making strategies*  
+
+---
+
+## 📌 How to Deploy & Use
+
+### *1️⃣ Deploy on Remix*
+1. Open [Remix Ethereum IDE](https://remix.ethereum.org/).  
+2. Paste **FlashLoanUSDT.sol** into a new file.  
+3. Compile using *Solidity 0.8.17*.  
+4. Deploy using *Injected Web3 (MetaMask)*.  
+   - Use Aave *PoolAddressesProvider*:
+     - *Ethereum Mainnet:* 0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2  
+
+---
+
+### *2️⃣ Approve & Deposit USDT*
+Before using the contract, you must approve it to spend your USDT.
+
+1. *Go to Remix → Load USDT Contract:*  
+   - Address: 0xdAC17F958D2ee523a2206206994597C13D831ec7  
+2. Call the approve function:  
+   ```solidity
+   approve(CONTRACT_ADDRESS, 100000000000)
