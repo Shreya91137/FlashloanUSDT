@@ -1,1 +1,13 @@
+# Ignore Node.js dependencies
+node_modules/
 
+# Ignore environment variables and secrets
+.env
+
+# Ignore compiled Solidity files
+*.json
+*.bin
+*.abi
+
+# Ignore Remix project cache
+remix-ide-workspace/
